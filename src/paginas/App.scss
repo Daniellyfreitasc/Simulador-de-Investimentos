@@ -1,0 +1,44 @@
+.app {
+	background-color: #efefef;
+  text-align: center;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.header {
+	padding: 2rem;
+  margin: auto;
+
+	&__title {
+		text-align: center;
+		font: {
+			size: clamp(2rem, 4.5vw, 4rem);
+			weight: 700;
+		}
+	}
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem;
+	gap: 4rem;
+
+	&__title {
+    display: block;
+    margin: auto;
+    text-align: center;
+		font: {
+			size: clamp(2rem, 4vw, 3rem);
+			weight: 700;
+		}
+	}
+
+	&__simulator {
+		width: 41.66666666666667%;
+	}
+
+	&__results {
+		width: 58.33333333333333%;
+	}
+}

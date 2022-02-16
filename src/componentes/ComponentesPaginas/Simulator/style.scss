@@ -1,0 +1,10 @@
+.simulator {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+
+  &__column {
+    flex: 1 1;
+	}
+}

@@ -1,0 +1,27 @@
+.input {
+  border: none;
+
+  &__container {
+    display: block;
+    margin: 1.75rem 0;
+
+		&__label {
+      text-align: left;
+      display: block;
+			font: {
+				size: 1rem;
+				weight: 300;
+			}
+		}
+
+		&__input {
+      display: block;
+      width: 100%;
+      margin: 2rem 0 3rem 0;
+			outline: none;
+			border: none;
+			border-bottom: 1px solid black;
+      background-color: #efefef;
+		}
+	}
+}

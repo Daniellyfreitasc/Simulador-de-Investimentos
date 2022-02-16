@@ -1,0 +1,21 @@
+.card {
+	min-height: 100px;
+	border-radius: 3px;
+	box-shadow: 0 0 5px 3px rgba(150, 150, 150, 0.5);
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__value {
+		&--green {
+			color: #40bd2d;
+      font-weight: bold;
+		}
+	}
+}
