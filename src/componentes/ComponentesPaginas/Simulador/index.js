@@ -69,7 +69,7 @@ const Simulator = ({ doSimulacao }) => {
 				{aporteInicial.match(/\D/) && <p>Aporte deve ser um número</p>}
 				<Input title='Prazo (em meses)' />
 				<Input title='IPCA (ao ano)' value={`${ipca}%`} />
-				<Button color='transparent' type='reset'>
+				<Button color='transparent' type='button'>
 					Limpar Campos
 				</Button>
 			</div>
