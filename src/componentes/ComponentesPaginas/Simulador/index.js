@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
-//import InputMask from 'react-input-mask'
-import RadioGroup from '../../components/RadioGroup'
-import Input from '../../components/Input'
-import Button from '../../components/Button'
+import RadioGroup from '../../RadioGroup'
+import Input from '../../Input'
+import Button from '../../Button'
 import './style.scss'
 
 const Simulator = ({ doSimulacao }) => {
@@ -21,10 +20,10 @@ const Simulator = ({ doSimulacao }) => {
 		const response = await fetch('http://localhost:3000/indicadores')
 		const indicadores = await response.json()
 
-		const cdiObj = indicadores.find((item) => item.nome === 'cdi')
+		const cdiObj = indicadores.find((i) => i.nome === 'cdi')
 		setCdi(cdiObj.valor)
 
-		const ipcaObj = indicadores.find((item) => item.nome === 'ipca')
+		const ipcaObj = indicadores.find((i) => i.nome === 'ipca')
 		setIpca(ipcaObj.valor)
 	}
 
@@ -53,8 +52,6 @@ const Simulator = ({ doSimulacao }) => {
 			label: 'FIXADO',
 		},
 	]
-	// console.log(validator)
-
 	return (
 		<div className='simulator'>
 			<div className='simulator__column'>
@@ -72,7 +69,7 @@ const Simulator = ({ doSimulacao }) => {
 				{aporteInicial.match(/\D/) && <p>Aporte deve ser um número</p>}
 				<Input title='Prazo (em meses)' />
 				<Input title='IPCA (ao ano)' value={`${ipca}%`} />
-				<Button color='transparent' type='button'>
+				<Button color='transparent' type='reset'>
 					Limpar Campos
 				</Button>
 			</div>

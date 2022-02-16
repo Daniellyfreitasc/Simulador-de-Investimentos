@@ -1,8 +1,7 @@
 import { useState } from 'react'
-
-import Simulator from '../pageComponents/Simulator'
-import Results from '../pageComponents/Results'
-import './App.scss'
+import Simulator from '../componentes/ComponentesPaginas/Simulador'
+import Results from '../componentes/ComponentesPaginas/Resultados'
+import '../paginas/App.scss'
 
 function App() {
 	const [resultadoSimulacao, setResultadoSimulacao] = useState()

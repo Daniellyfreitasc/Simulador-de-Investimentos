@@ -1,5 +1,5 @@
 import './style.scss'
-import Card from '../../components/Card'
+import Card from '../../Card'
 
 const Results = ({
 	valorFinalBruto,
